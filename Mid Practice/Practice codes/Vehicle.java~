@@ -1,0 +1,6 @@
+public class Vehicle{
+public String type;
+public String wheels;
+public String color;
+
+}

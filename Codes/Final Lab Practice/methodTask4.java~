@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class methodTask4{
+  public static boolean isPerfect(int x){  //   isPerfect
+  boolean flag=false;
+    int sum=0;
+  for(int i=1;i<x;i++){
+    if(x%i==0){
+    sum+=i;
+    }
+  }
+  if(sum==x){
+  flag=true;
+  }
+  return flag;
+  }
+  public static void main(String[] args) {
+  Scanner sc= new Scanner(System.in);
+    System.out.print("Enter a number to check whether it is a perfect or not : ");
+    int n=sc.nextInt();
+    boolean check=isPerfect(n);
+    System.out.println(check);
+  }
+}

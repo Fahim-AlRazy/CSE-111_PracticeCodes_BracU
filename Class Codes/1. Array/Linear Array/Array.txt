@@ -1,0 +1,67 @@
+import java.util.Scanner;
+import java.util.Arrays;
+public class arrayCreate {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter array length: ");
+        int len = sc.nextInt();
+        int [] arr = new int [len];
+        System.out.println(Arrays.toString(arr));
+        for(int i = 0; i < len; i++){
+            arr[i] = sc.nextInt();
+            System.out.println(Arrays.toString(arr));
+            // System.out.println("index: " + i);
+        }
+        // arr[0] = sc.nextInt();
+        // arr[1] = 9;
+        // arr[2] = 18;
+        System.out.println(Arrays.toString(arr));
+    }
+}
+
+
+import java.util.Scanner;
+import java.util.Arrays;
+public class arrayResize {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter array length: ");
+        int len = sc.nextInt();
+        int [] arr = new int [len]; // 3 length
+        for(int i = 0; i < len; i++){
+            arr[i] = sc.nextInt();
+        }
+        System.out.println(Arrays.toString(arr));
+        int [] arr2 = new int [len+1];
+        // arr2 = arr;
+        // System.out.println(arr);
+        // System.out.println(arr2);
+        for(int i = 0; i < arr.length; i++){
+            arr2[i] = arr[i];
+        }
+        arr2[len] = sc.nextInt();
+        System.out.println(Arrays.toString(arr));
+        System.out.println(Arrays.toString(arr2));
+    }
+}
+
+public class TraceD{
+  public static void main(String args[]){
+     int[] arr1 = {3,2,0,1,5};
+     int[] arr2 = {30,20,40,11,55};
+     int index1 = 0, index2 = 0;
+     while (index1<arr1.length-1){
+         arr2[index1] = arr1[index2]+ index1 - arr2[index2];
+         index2 = 1;
+         if (index1 >= arr1.length/2)
+            arr2 = arr1;
+         while (index2 < index1 ){
+            arr2[index1] = arr2[index1] + arr1[index2] - index2;
+            index2 = index2 + 1;
+         }
+         System.out.println(arr2[index1]);
+         index1 = index1 + 1;
+     }
+     System.out.println(arr2[arr1[index2]]);
+  }
+}

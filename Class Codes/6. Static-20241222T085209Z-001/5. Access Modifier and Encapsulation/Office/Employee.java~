@@ -1,0 +1,20 @@
+public class Employee{
+  
+  public String name ;   // public access modifier
+  private int employeeID ;  // private access modifier
+  protected double salary ; // protected access modifier
+  String department ;   // default access modifier
+  
+  public Employee(String n, int id, double sal, String dept){
+    name = n;
+    employeeID = id;
+    salary = sal;
+    department = dept;
+  }
+  public void showDetails(){
+    System.out.println("Name: " + name);
+    System.out.println("ID: " + employeeID);
+    System.out.println("Salary: " + salary);
+    System.out.println("Department: " + department);
+  }
+}

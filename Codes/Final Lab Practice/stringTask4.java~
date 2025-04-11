@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class stringTask4{
+  public static boolean isHappyNumber(int x){
+  boolean happy=false;
+  
+  
+  return happy;
+  }
+  public static void main(String[] args){
+  Scanner sc= new Scanner(System.in);
+    System.out.print("Enter a number : ");
+    int input=sc.nextInt();
+    boolean check = isHappyNumber(input);
+    System.out.println(check);
+  }
+}

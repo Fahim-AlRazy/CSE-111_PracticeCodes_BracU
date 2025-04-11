@@ -1,0 +1,10 @@
+public class Dragon extends MagicalCreature{
+  public Dragon(String name , int age){
+    super(name,age);
+  }
+}
+public class Phoenix extends MagicalCreature{
+  public Phoenix(String name , int age){
+    super(name,age);
+  }
+}

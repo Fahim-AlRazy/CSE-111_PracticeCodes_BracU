@@ -1,0 +1,10 @@
+public class Striker extends Football{
+  public Striker(){
+    
+  }
+}
+class Defender extends Football{
+  public Defender(){
+    
+  }
+}

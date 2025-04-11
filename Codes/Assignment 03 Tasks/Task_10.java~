@@ -1,0 +1,56 @@
+import java.util.Scanner;
+public class Task_10{
+  public static void main(String[] args){
+    Scanner i = new Scanner(System.in);
+    System.out.print("Please Enter 3 float numbers : ");
+    float a =i.nextFloat() , b = i.nextFloat() ,c = i.nextFloat() ;
+      float max = a , min = a ;
+  
+  /*    if(b>max){   //2nd number
+        max = b;
+      }
+      else if(b<min){
+      min = b ;
+      }
+      if (c > max) {  // 3rd number
+            max = c;
+        } else if (c < min) {
+            min = c;
+        }*/
+      
+      
+     
+      
+        if(a>b && b>c){
+     max = a  ;
+    
+    }
+    else if(b>c && a>c){
+     max = b  ;
+    
+    }
+      else {
+      max = c  ;
+      
+    }
+        if(a<b && b<c){
+      
+      min = a ;
+    }
+        else if(b<a && a<c){
+      
+      min = b ;
+    }
+    else {
+     
+      min = c ;
+      }    
+      
+    
+    /*
+       float max = Math.max(num1, Math.max(num2, num3));
+       float min = Math.min(num1, Math.min(num2, num3)); 
+     */
+         System.out.println("Maximum number is "+max +" \n Minimum number is " +min); 
+  }
+}

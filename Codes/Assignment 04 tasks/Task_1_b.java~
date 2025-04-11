@@ -1,0 +1,16 @@
+//Task_1(b)
+import java.util.Scanner;
+public class Task_1_b{
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);  
+    int j = -10;
+    while(j<=20)
+    { if(j==20)
+      System.out.println(j);
+    else {
+      System.out.print(j+",");
+    }
+    j+=5;
+    }
+  }
+}

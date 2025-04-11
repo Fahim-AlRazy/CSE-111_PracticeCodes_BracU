@@ -1,0 +1,29 @@
+class ajairatest {
+public static void main(String[] args) {
+int x= 5; //Value of x is 5
+int y= 7; //Value of y is 7
+System.out.println(x); //Print current value of x
+
+System.out.println(y); //Print current value of y
+
+x-=1;
+y+=1;
+System.out.println(x);
+System.out.println(y);
+x= ++y;
+y= x--;
+System.out.println(x);
+System.out.println(y);
+System.out.println(x==y);
+System.out.println(x%y==4*2);
+System.out.println(x&y);
+System.out.println(x|y);
+x= -x;
+System.out.println(x);
+x= ~x;
+System.out.println(x);
+y*=x;
+System.out.println(y);
+System.out.println(x%2==1 && y%2!=0);
+}
+}

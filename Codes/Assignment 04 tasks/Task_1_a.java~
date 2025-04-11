@@ -1,0 +1,19 @@
+//Task_1(a)
+import java.util.Scanner;
+public class Task_1_a{
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    int i = 24;
+    while(i>=-6)
+    {
+      if(i==-6){
+        System.out.println(i);
+      }
+      else {
+        System.out.print(i+",");
+      }
+      i-=6;
+    }
+  }
+}
+

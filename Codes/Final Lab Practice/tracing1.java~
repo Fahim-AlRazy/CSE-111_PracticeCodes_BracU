@@ -1,0 +1,24 @@
+public class tracing1 {
+  public static void main(String[] args){
+    int i = 1;
+    int [] a = {5,6,7,8,9};
+    while (i <= 5){
+      int j = a[i%a.length];
+      while (j > 1){
+        System.out.print(j--);
+        if (j == 2)
+          break;
+      }
+      System.out.println("***");
+      ++i;
+    }
+    double x = 7;
+    double y = 8;
+    double z = 9;
+    System.out.println(x < y || y > z);
+    System.out.println(x < y && y > z);
+    System.out.println(x < y);
+    System.out.println(x + y < z);
+    System.out.println((x + y)-6 < z);
+  }
+}

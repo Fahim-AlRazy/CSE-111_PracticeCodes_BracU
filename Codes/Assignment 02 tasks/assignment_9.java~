@@ -1,0 +1,19 @@
+public class assignment_9
+{
+  public static void main(String[] args)
+  {
+    /*
+9. Write a Java Code to display the multiplication table for a given positive integer 'n'. The
+table should include the products of 'n' with each of the numbers from 1 to 10. For
+example, if n = 5, your code should output:
+5 x 1 = 5
+5 x 2 = 10
+5 x 3 = 15
+...
+5 x 10 = 50
+[You are not allowed to use loops to solve this problem.]
+     */
+  System.out.println("ajaira");
+  
+  }
+}

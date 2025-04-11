@@ -1,0 +1,6 @@
+public class Mango extends Fruit{
+  
+}
+class Jackfruit extends Fruit{
+  
+}

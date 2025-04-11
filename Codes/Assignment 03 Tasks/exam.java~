@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class exam{
+  public static void main(String[] args){
+  Scanner in = new Scanner(System.in);
+  
+  System.out.println("Enter x move");
+  int move_x= in.nextInt();
+   System.out.println("Enter y move");
+  int move_y= in.nextInt();
+  
+  int x= -2 , y= -4;
+  int now_x= x+move_x , now_y=y+move_y;
+  System.out.println("Cordinate is : ( "+ now_x+" , "+ now_y")");
+  if(now_x>0){
+   System.out.println();
+  }
+  else if(){
+  
+  }
+  }
+}

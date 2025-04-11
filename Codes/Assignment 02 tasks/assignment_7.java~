@@ -1,0 +1,16 @@
+public class assignment_7
+{
+  public static void main(String[] args)
+  {
+    /*
+7. Write a Java program to convert minutes into years and days. For simplicity, assume each
+year consists of 365 days.
+Test Data:
+Given the number of minutes: 3456789
+Expected Output:
+3456789 minutes is approximately 6 years and 210 days
+     */
+  System.out.println("ajaira");
+  
+  }
+}

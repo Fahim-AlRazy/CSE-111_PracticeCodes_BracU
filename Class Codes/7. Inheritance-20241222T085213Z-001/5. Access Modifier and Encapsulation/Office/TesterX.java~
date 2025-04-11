@@ -1,0 +1,7 @@
+public class TesterX{
+  public static void main(String [] args) {
+    Employee emp = new Employee("Leo", 10,5000.5, "HR");
+    System.out.println(emp.name);
+    
+  }
+}

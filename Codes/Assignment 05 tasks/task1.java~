@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class task1{
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    System.out.print("Enter a positive integer N : ");
+    int N=sc.nextInt();
+    while(N<0){
+      System.out.print("Your input is negative . \nPlease Enter a positive integer N : ");
+      N=sc.nextInt();
+    }
+    int count=0,rem=0,div=0;
+    for(int i=2;count<=N;i++){
+    for(int j=1;j<=i;j++){
+      
+      if(i%j==0){
+      div++;
+      }
+      if(div>2){
+      break;
+      }
+      else{
+      System.out.println(i);
+      count++;
+      }
+  
+    }//inner for loop closing 
+  }//outer for loop closing
+
+  
+  }
+}

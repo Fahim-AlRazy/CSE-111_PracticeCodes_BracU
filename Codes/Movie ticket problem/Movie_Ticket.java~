@@ -1,0 +1,8 @@
+import.scanner.util
+public class Movie_Ticket
+{
+  public static void main(String[] args)
+  {
+  
+  }
+}    

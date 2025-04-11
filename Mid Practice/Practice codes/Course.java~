@@ -1,0 +1,13 @@
+public class Course{
+  public String name;
+  public String code;
+  public int credit;
+  public void createCourse(String name , String code , int credit){
+    this.name=name;
+    this.code=code;
+    this.credit=credit;
+  }
+  public void displayCourse(){
+    System.out.println("Course Name: "+this.name+"\n Course Code: "+this.code+"\n Course Credit : "+this.credit);  
+  }
+}

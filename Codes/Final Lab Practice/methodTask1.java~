@@ -1,0 +1,78 @@
+import java.util.Scanner;
+public class methodTask1{
+  public static void evenChecker(int x){  // even checker 
+    if(x%2==0){
+      System.out.println("Even!!");
+    }
+    else{
+      System.out.println("Odd!!");
+    }
+  }
+  public static boolean isEven(int x){  // is Even
+    boolean bool=false;
+    if(x%2==0){
+      bool=true;
+    }
+    else{
+      bool=false;
+    }
+    return bool;
+  }
+  public static boolean isPos(int x){  // is Pos
+    boolean bool = false;
+    if(x>=0){
+      bool= true;
+    }
+    else if(x<0){
+      bool=false;
+    }
+    return bool;
+  }
+  public static void sequence(int n){   // sequence
+    if(isPos(n)){
+      for(int i=0;i<=n;i++){
+        if(isEven(i)){
+          System.out.print(i+" ");
+        }
+      }
+    }else{
+      for(int i=0;i<=n;i++){
+        if(!isEven(i)){
+          System.out.print(i+" ");
+        }
+      }
+    }
+    
+  }
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    System.out.println("                       part-A  Even Checker Method  ------");
+    System.out.print("Enter an integer : ");
+    int input= sc.nextInt();
+    evenChecker(input);
+    
+    System.out.println(" ");
+    System.out.println("                       part-B  is Even Method  ------");
+    
+    System.out.print("Enter an integer : ");
+    input= sc.nextInt();
+    boolean result = isEven(input);
+    System.out.println(result);
+    
+    System.out.println(" ");
+    System.out.println("                       part-C  is Pos Method  ------");
+    
+    System.out.print("Enter an integer : ");
+    input= sc.nextInt();
+    boolean result2 = isPos(input);
+    System.out.println(result2);
+    
+    System.out.println(" ");
+    System.out.println("                        part-D sequence Method  ------");
+    
+    System.out.print("Enter an integer : ");
+    input= sc.nextInt();
+    sequence(input);
+    
+  }
+}

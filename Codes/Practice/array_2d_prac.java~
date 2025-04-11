@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class array_2d_prac{
+  public static void main(String[] args){
+  Scanner sc= new Scanner(System.in);
+  System.out.println("What matrix do you want ? ")
+    int i =sc.nextInt();
+    System.out.println("by ")
+    int j=sc.nextInt();
+    System.out.println("matrix")
+    int[][] m = new int[i][j];
+    int c=0,d=0;
+    for(int a=1;a<=i){
+    
+    }
+  }
+}
